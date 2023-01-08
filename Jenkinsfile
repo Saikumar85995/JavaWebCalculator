@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Git checkout') {
             steps {
-                git credentialsId: '6de27308-1c85-4146-a7a9-89e096946d44', url: 'https://github.com/Saikumar85995/JavaCalculator.git'   
+                   git credentialsId: '6de27308-1c85-4146-a7a9-89e096946d44', url: 'https://github.com/Saikumar85995/JavaWebCalculator.git'
             }
         }
         stage('Build') {
