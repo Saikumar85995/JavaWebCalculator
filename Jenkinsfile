@@ -10,7 +10,6 @@ pipeline {
         stage('Build') {
             steps {
                 sh "/usr/share/maven/maven/bin/mvn package"
-                sh "mv target/*.war target/webcal.war"
             }
         }
         stage('Deploy') {
